@@ -5,7 +5,7 @@ import plotly.express
 from matplotlib import pyplot as plt
 import seaborn as sns
 
-panic_attack_df = pd.read_csv('panic_attack_dataset.csv')
+panic_attack_df = pd.read_csv('/Users/mezaansayeda/Sprint4Project/notebooks/panic_attack_dataset.csv')
 
 # Convert all object type columns to strings
 for col in panic_attack_df.select_dtypes(include=['object']).columns:
