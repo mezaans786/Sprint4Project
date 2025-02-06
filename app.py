@@ -8,6 +8,10 @@ import seaborn as sns
 
 panic_attack_df = pd.read_csv('panic_attack_dataset.csv')
 
+# Convert all object type columns to strings
+for col in panic_attack_df.select_dtypes(include=['object']).columns:
+    panic_attack_df[col] = panic_attack_df[col].astype(str)
+
 st.header('Analysis of Panic Attacks')
 st.write(panic_attack_df)
 
