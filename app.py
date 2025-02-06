@@ -11,6 +11,8 @@ panic_attack_df = pd.read_csv('panic_attack_dataset.csv')
 for col in panic_attack_df.select_dtypes(include=['object']).columns:
     panic_attack_df[col] = panic_attack_df[col].astype(str)
 
+panic_attack_df['ID'] = panic_attack_df['ID'].astype(str)
+
 st.header('Analysis of Panic Attacks')
 st.write(panic_attack_df)
 
