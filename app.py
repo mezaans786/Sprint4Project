@@ -15,7 +15,7 @@ panic_attack_df['ID'] = panic_attack_df['ID'].astype(str)
 panic_attack_df['ID'] = panic_attack_df['ID'].fillna('').astype(str)
 
 st.header('Analysis of Panic Attacks')
-st.write(panic_attack_df)
+#st.write(panic_attack_df)
 
 # Plot Panic Attack triggers 
 trigger_counts = panic_attack_df['Trigger'].value_counts()
